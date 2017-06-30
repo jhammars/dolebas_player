@@ -1,0 +1,18 @@
+wistia-player-library:
+#  css:
+#    theme:
+#      css/wistia-player-css.css: {}
+  js:
+    //fast.wistia.com/assets/external/E-v1.js:
+      type: external
+      attributes:
+        async: true
+    js/wistia-player-embed.js: {}
+
+frontpage-player-library:
+  js:
+    //fast.wistia.com/assets/external/E-v1.js:
+      type: external
+      attributes:
+        async: true
+    js/frontpage_player.js: {}

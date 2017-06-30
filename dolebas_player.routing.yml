@@ -1,0 +1,9 @@
+dolebas_player.api_keys_config_form:
+  path: '/admin/config/dolebas-player/api-config'
+  defaults:
+    _form: '\Drupal\dolebas_player\Form\ApiKeysConfigForm'
+    _title: 'Api Config Form'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

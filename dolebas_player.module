@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Contains dolebas_player.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_theme()
+ * @return mixed
+ */
+function dolebas_player_theme() {
+
+  $theme['dolebas_player'] = array(
+    'variables' => array(
+      'video_id' => NULL,
+      'thumb_url' => NULL,
+    ),
+    'template' => 'dolebas_player',
+  );
+
+  $theme['frontpage_player'] = array(
+    'variables' => array(
+      'frontpage_video_id' => NULL,
+      'variable_2' => NULL,
+    ),
+    'template' => 'frontpage_player',
+  );
+
+  return $theme;
+
+}
