@@ -39,7 +39,7 @@ class DolebasPlayer extends FieldPluginBase {
       $nid = NULL;
     }
 
-    $config = \Drupal::config('dolebas_player.api_keys');
+    $config = \Drupal::config('dolebas_config.config');
     $cloudinary_usr = $config->get('cloudinary_auth_username');
     $cloudinary_pwd = $config->get('cloudinary_auth_password');
     $wistia_usr = $config->get('wistia_auth_username');
