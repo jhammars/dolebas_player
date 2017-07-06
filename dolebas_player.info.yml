@@ -4,4 +4,5 @@ type: module
 core: 8.x
 package: Dolebas
 dependencies:
+  - eva:eva
   - dolebas_config:dolebas_config
