@@ -1,4 +1,4 @@
-    {
-        "type": "vcs",
-        "url": "https://github.com/dolebas/dolebas_player.git"
-    },
+{
+    "name": "dolebas/dolebas_player",
+    "type": "drupal-custom-module"
+}
