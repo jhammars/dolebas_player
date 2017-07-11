@@ -1,4 +1,8 @@
 {
     "name": "dolebas/dolebas_player",
-    "type": "drupal-custom-module"
+    "type": "drupal-custom-module",
+    "require": {
+        "drupal/eva": "*",
+        "dolebas/dolebas_config": "*"
+    }
 }
