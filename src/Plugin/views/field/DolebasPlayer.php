@@ -31,13 +31,7 @@ class DolebasPlayer extends FieldPluginBase {
    */
   public function render(ResultRow $values) {
 
-    $view_nid = strip_tags($this->view->field['nid']->original_value);
-    if ($view_nid) {
-      $nid = $view_nid;
-    }
-    else {
-      $nid = NULL;
-    }
+    $uuid = strip_tags($this->view->field['uuid']->original_value);
 
     $config = \Drupal::config('dolebas_config.config');
     $cloudinary_usr = $config->get('cloudinary_auth_username');
@@ -46,14 +40,14 @@ class DolebasPlayer extends FieldPluginBase {
     $wistia_pwd = $config->get('wistia_auth_password');
 
     $client2 = \Drupal::httpClient();
-    $request2 = $client2->get('https://api.cloudinary.com/v1_1/dolebas/resources/image/upload/?public_ids[]=' . $nid, [
+    $request2 = $client2->get('https://api.cloudinary.com/v1_1/dolebas/resources/image/upload/?public_ids[]=' . $uuid, [
       'auth' => [$cloudinary_usr,$cloudinary_pwd]
     ]);
     $response2 = json_decode($request2->getBody(),true);
     $thumb_url = $response2['resources'][0]['url'];
 
     $client1 = \Drupal::httpClient();
-    $request1 = $client1->get('https://api.wistia.com/v1/medias.json?name=' . $nid, [
+    $request1 = $client1->get('https://api.wistia.com/v1/medias.json?name=' . $uuid, [
       'auth' => [$wistia_usr,$wistia_pwd]
     ]);
     $response1 = json_decode($request1->getBody(),true);
