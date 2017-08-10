@@ -7,7 +7,6 @@ dependencies:
       - node
       - user
   module:
-    - dolebas_player
     - eva
     - node
     - user
