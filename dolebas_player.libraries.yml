@@ -16,3 +16,11 @@ frontpage-player-library:
       attributes:
         async: true
     js/frontpage_player.js: {}
+
+remove-button:
+  header: true
+  js:
+    js/remove-button.js: {}
+  dependencies:
+    - core/drupal.ajax
+   

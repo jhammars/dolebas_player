@@ -20,6 +20,14 @@ function dolebas_player_theme() {
     ),
     'template' => 'dolebas_player',
   );
+  
+  $theme['dolebas_player_remove_button'] = array(
+    'variables' => array(
+      'var1' => NULL,
+      'var2' => NULL,
+    ),
+    'template' => 'dolebas_player_remove_button',
+  );  
 
   $theme['frontpage_player'] = array(
     'variables' => array(
