@@ -7,9 +7,9 @@
                 id: settings.frontpage_hid,
                 options: {
                     playerColor: "000000",
-                    autoPlay: true,
-                    controlsVisibleOnLoad: false,
-                    playlistLoop: true,
+                    autoPlay: false,
+                    controlsVisibleOnLoad: true,
+                    playlistLoop: false,
                     volume: 0,
                     volumeControl: true,
                     playbar: false,
@@ -26,7 +26,7 @@
                     var WhereFraction = TimesPlayedSinceInception - Math.floor(TimesPlayedSinceInception)
                     var VideoStartHere = VideoDuration * WhereFraction;
                     video.time(VideoStartHere);
-                    video.play();
+                    // video.play();
                     var NextVideo = video.hashedId();
                     video.bind("end", function(t) {
                         console.log("the video ended here");

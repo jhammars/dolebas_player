@@ -10,6 +10,7 @@ wistia-player-library:
     js/wistia-player-embed.js: {}
 
 frontpage-player-library:
+  header: true
   js:
     //fast.wistia.com/assets/external/E-v1.js:
       type: external

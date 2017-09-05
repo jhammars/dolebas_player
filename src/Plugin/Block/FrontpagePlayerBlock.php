@@ -19,7 +19,7 @@ class FrontpagePlayerBlock extends BlockBase {
    */
   public function build() {
 
-    $hid = 'pu8lyf4e4m';
+    $hid = '247kulfafh';
     $frontpage_video_id = 'wistia_embed wistia_async_' . $hid . '';
 
     return [
