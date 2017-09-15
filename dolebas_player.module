@@ -37,6 +37,13 @@ function dolebas_player_theme() {
     'template' => 'frontpage_player',
   );
 
+  $theme['dolebas_videoplayer'] = array(
+    'variables' => array(
+      'frontpage_video_id' => NULL
+    ),
+    'template' => 'dolebas_videoplayer'
+  );
+
   return $theme;
 
 }

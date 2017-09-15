@@ -57,11 +57,11 @@ class DolebasPlayer extends FieldPluginBase {
     $element['video_player']  = [
       '#type' => 'inline_template',
       '#theme' => 'dolebas_player',
-      '#video_id' => $video_id,
+      '#video_id' => $hid, //$video_id,
       '#thumb_url' => $thumb_url,
       '#attached' => array(
         'library' => array(
-          'dolebas_player/wistia-player-library'
+          'dolebas_player/dolebas-player'
         ),
         'drupalSettings' => array(
           'video_hid' => $hid

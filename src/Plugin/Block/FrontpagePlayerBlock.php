@@ -27,7 +27,7 @@ class FrontpagePlayerBlock extends BlockBase {
       '#frontpage_video_id' => $frontpage_video_id,
       '#attached' => array(
         'library' =>  array(
-          'dolebas_player/frontpage-player-library',
+          'dolebas_player/frontpage-player',
         ),
         'drupalSettings' => array(
           'frontpage_hid' => $hid

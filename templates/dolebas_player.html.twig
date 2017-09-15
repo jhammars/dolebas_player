@@ -1,5 +1,13 @@
-<div class="{{ video_id }}" style="display:inline-block; white-space:nowrap;">
-<a href="#">
-    <img src="{{ thumb_url }}" alt="" />
-</a>
-</div>
+{#<div class="{{ video_id }}" style="display:inline-block; white-space:nowrap;">#}
+{#<a href="#">#}
+    <a href="#wistia_{{ video_id }}">
+    <img class="my-thumbnail-class" src="{{ thumb_url }}" alt="">
+    </a>
+    {#<a href="#wistia_30q7n48g4f">Make French Toast</a><br/>#}
+    {#<img id="custom_pause_button" src="{{ thumb_url }}" alt="" onclick="myNewVideo('{{ video_id }}')">#}
+    {#<img id="custom_pause_button" src="{{ thumb_url }}" alt="" onclick="myPause()">#}
+        
+    
+    {#  onClick load video_id in frontpage player #}
+{#</a>#}
+{#</div>#}

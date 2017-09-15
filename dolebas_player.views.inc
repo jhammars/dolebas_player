@@ -13,11 +13,10 @@ use Drupal\field\FieldConfigInterface;
 use Drupal\field\FieldStorageConfigInterface;
 use Drupal\system\ActionConfigEntityInterface;
 
-
 /**
- * Implements hook_views_data_alter().
- */
-function dolebas_player_views_data_alter(array &$data) {
+* Implements hook_views_data().
+*/
+function dolebas_player_views_data() {
 
     $data['views']['table']['group'] = t('Custom Global');
     $data['views']['table']['join'] = [
@@ -32,7 +31,7 @@ function dolebas_player_views_data_alter(array &$data) {
             'id' => 'dolebas_player_rm_views_field',
         ],
     ];
-
+    
     $data['node']['dolebas_player'] = array(
       'title' => t('Dolebas Player'),
       'field' => array(
@@ -42,6 +41,13 @@ function dolebas_player_views_data_alter(array &$data) {
       ),
     );
 
-    return $data;
+    $data['views']['dolebas_videoplayer'] = [
+        'title' => t('Dolebas videoplayer'),
+        'help' => t('Dolebas videoplayer'),
+        'field' => [
+            'id' => 'dolebas_videoplayer',
+        ],
+    ];
 
+    return $data;
 }

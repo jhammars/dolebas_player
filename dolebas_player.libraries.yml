@@ -1,7 +1,7 @@
-wistia-player-library:
-#  css:
-#    theme:
-#      css/wistia-player-css.css: {}
+dolebas-player:
+  css:
+    theme:
+      css/dolebas-player.css: {}
   js:
     //fast.wistia.com/assets/external/E-v1.js:
       type: external
@@ -9,8 +9,22 @@ wistia-player-library:
         async: true
     js/wistia-player-embed.js: {}
 
-frontpage-player-library:
+dolebas-videoplayer:
+  css:
+    theme:
+      css/dolebas-videoplayer.css: {}
+  js:
+    //fast.wistia.com/assets/external/E-v1.js:
+      type: external
+      attributes:
+        async: true
+    js/wistia-player-embed.js: {}
+
+frontpage-player:
   header: true
+  css:
+    theme:
+      css/frontpage-player.css: {}
   js:
     //fast.wistia.com/assets/external/E-v1.js:
       type: external
